@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>university website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+</head>
+<body>
+	<section class="sub-header">
+		<nav>
+		    <a href="index.html"><img src="images/aqsa.png"></a>
+		    <div class="nav-links" id="navLinks">
+		    	<i class="fa fa-times" onclick="hideMenu()"></i>
+			    <ul>
+				    <li><a href="index.html">HOME</a></li>
+				    <li><a href="about.html">ABOUT</a></li>
+				    <li><a href="course.html">COURSE</a></li>
+				    <li><a href="blog.html">BLOG</a></li>
+				    <li><a href="contact.html">CONTACT</a></li>
+			    </ul>
+		    </div>
+		    <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+		<h1>About Us</h1>
+	</section>
+	<section class="about-us">
+		<div class="row">
+			<div class="about-col">
+				<h1>The World Largest University</h1>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				<a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+
+			</div>
+			<div class="about-col">
+				<img src="images/about.jpg ">
+			</div>
+		</div>
+		
+	</section>
+	
+	<section class="footer">
+		<h4>About Us</h4>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br> when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<div class="icons">
+			<i class="fa fa-facebook"></i>
+			<i class="fa fa-twitter"></i>
+			<i class="fa fa-instagram"></i>
+			<i class="fa fa-linkedin"></i>
+			<p><i class="fa fa-copyright"></i> copyright AQSA MUNIR</p>
+			
+		</div>
+		
+	</section>
+	    <!-- ----------javaScript for toggle Menu-------- -->
+	<script>
+		var navLinks = document.getElementById("navLinks");
+		function showMenu(){
+			navLinks.style.right = "0";
+		}
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+
+	</script>
+
+</body>
+</html>
